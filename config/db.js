@@ -2,13 +2,7 @@ import Sequelize from 'sequelize'
 import * as dotenv from 'dotenv'
 dotenv.config()
 
-const database = new Sequelize(process.env.BD_NAME, process.env.BD_USER, process.env.BD_PASSWORD, {
-    host: process.env.BD_HOST,
-    port: process.env.BD_PORT,
-    dialect: 'postgres',
-    operatorsAliases: 0,
-
-
+const database = new Sequelize('postgres://pgalenmw:8YBRya0aQWD2ePnDxd-ZudGcDBj2XzdE@babar.db.elephantsql.com/pgalenmw', {
     pool: {
         max: 5,
         min: 0,
