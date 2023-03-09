@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<!-- Header -->
+<header class="text-center">
+    <img src="./img/header.jpeg" class="img-fluid" alt="img-fluid">
+    <h1 class="py-3">EnVivo: Conciertos cerca de ti</h1>
+</header>
+
+<!-- Body -->
+<body class="text-center">
+  <div class="container col-8">
+    <p>¡Entérate de todos los conciertos y tocatas a lo largo del país! ¿Fuiste a un concierto? ¡Comparte tu experiencia y crea comunidad con otros seguidores de tus artistas favoritos!</p>
+    <div class="row">
+      <div class="col-6">
+    <p>Incia sesión en el link de acá.</p>
+    <!-- Modal ingreso usuarios -->
+        <!-- Modal inicio sesión -->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">Inicio de sesión</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Usuario o Correo electrónico</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Contraseña</label>
+                  </div>
+                </div>
+                <div class="modal-footer text-center">
+                  <button type="submit" class="btn btn-success">Ingresar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary col-6" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Ingresar</a>
+  </div>
+  <div class="col-6">
+    <p>¿Quieres dejar un comentario? ¡Regístrate en el siguiente enlace!</p>
+    <a class="btn btn-warning col-6" href="./pages/registro.html">Registrarse</a>
+    </div>
+  </div>
+
+  </div>
+  <section class="m-3 p-5 border border-light">
+    <h2>Revisa las últimas noticias aquí:</h2>
+
+    <!-- hero -->
+    <div id="contenedorNoticias"></div>
+    </section>
+<!-- Footer -->
+<footer>
+    <div class="text-center p-4 text-secondary" style="background-color: rgba(0, 0, 0, 0.05);">
+      EnVivo | Desarrollado por: Javier Vargas | 2023
+      <a class="text-reset fw-bold" href="#">Javier Vargas</a>
+    </div>
+  </footer>
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</html>
